@@ -1,24 +1,42 @@
+<script>
+	const links = [{ id: 0, name: 'Study Pal', lead: './StudyPal' }];
+</script>
+
 <!-- :by Cristina Gottardi: https://images.unsplash.com/profile-1509140709644-5b9d6cd408f9?w=32&dpr=2&crop=faces&bg=%23fff&h=32&auto=format&fit=crop&q=60&ixlib=rb-4.0.3 -->
-<img
-	src="https://images.unsplash.com/photo-1522787345986-d5c7885a889e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-	alt=""
-/>
 
-<article class="text-center">
-	<h1>Let's Build a <span>Brighter</span> Future</h1>
-	<p class="subtitle">Testing Font</p>
-	<p class="text m-auto w-80 text-justify text-sm">
-		Together we may find lighter roads to travel. The future is ready to be built and we have every
-		tool we need at our disposal. This is a place where you will realize your worth finding more
-		reasons to explore this realm. Thank you.
-	</p>
-</article>
+<div
+	class="home relative grid h-screen w-screen grid-cols-12 grid-rows-12 gap-4 bg-[url('https://images.unsplash.com/photo-1522787345986-d5c7885a889e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center p-4"
+	alt="Image of Pillars from Before created by Critstina Gottardi from Unsplash"
+>
+	<nav class="col-span-12 row-span-1 flex justify-between">
+		<a href="/" aria-label="Home">Marici</a>
 
-<form action="" method="post" class="text-center">
-	<label for="email">Stay Connected</label>
-	<input id="email" type="email" name="email" class="border border-blue-600" />
-	<input type="submit" value="submit" />
-</form>
+		<section>
+			{#each links as link}
+				<ul>
+					<li class="underline">
+						<a href={link.lead}>{link.name}</a>
+					</li>
+				</ul>
+			{/each}
+		</section>
+	</nav>
+	<article class="col-span-12 row-span-4 flex flex-col gap-2 text-center">
+		<h1 class="text-6xl">Let's Build a <span>Brighter</span> Future</h1>
+		<p class="subtitle underline">Architects of a brandnew Realm</p>
+		<p class="m-auto w-80 rounded-sm bg-neutral-200/30 p-1 text-justify text-sm backdrop-blur-md">
+			Together we may find lighter roads to travel. The future is ready to be built and we have
+			every tool we need at our disposal. This is a place where you will realize your worth finding
+			more reasons to explore this realm. Thank you.
+		</p>
+	</article>
+
+	<form action="" method="post" class="col-span-12 row-span-1 text-center">
+		<label for="email">Stay Connected</label>
+		<input id="email" type="email" name="email" class="border border-blue-600" />
+		<input type="submit" value="submit" />
+	</form>
+</div>
 
 <style>
 	* {

@@ -22,9 +22,11 @@
 		</section>
 	</nav>
 	<article class="col-span-12 row-span-4 flex flex-col gap-2 text-center">
-		<h1 class="text-6xl">Let's Build a <span>Brighter</span> Future</h1>
+		<h1 class="text-6xl">
+			Carving our path by Building the <span>Brighter</span> Future we always knew
+		</h1>
 		<p class="subtitle underline">Architects of a brandnew Realm</p>
-		<p class="m-auto w-80 rounded-sm bg-neutral-200/30 p-1 text-justify text-sm backdrop-blur-md">
+		<p class="text-md m-auto w-2/3 rounded-sm bg-neutral-300/30 p-4 text-justify backdrop-blur-md">
 			Together we may find lighter roads to travel. The future is ready to be built and we have
 			every tool we need at our disposal. This is a place where you will realize your worth finding
 			more reasons to explore this realm. Thank you.
@@ -32,9 +34,15 @@
 	</article>
 
 	<form action="" method="post" class="col-span-12 row-span-1 text-center">
-		<label for="email">Stay Connected</label>
-		<input id="email" type="email" name="email" class="border border-blue-600" />
-		<input type="submit" value="submit" />
+		<label for="email" class="block">Stay In tune to our TL</label>
+		<input
+			id="email"
+			type="email"
+			name="email"
+			placeholder="Enter email"
+			class="rounded-sm border border-blue-600 px-4 py-1"
+		/>
+		<input type="submit" value="submit" class="rounded-sm bg-yellow-500/60 px-4 py-2" />
 	</form>
 </div>
 
